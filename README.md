@@ -78,8 +78,6 @@ python scripts/package.py
 
 生成的安装包位于 `dist/`，ZIP 根目录包含 `blender_manifest.toml`。MCP 桥接单独从仓库下载使用。
 
-项目记录：[我和 AI 一起做了个 Blender 快捷键提示插件](https://syjzt.site/blog/blender-shortcut-compass-ai/)。
-
 ## 许可证
 
 代码沿用原始安装包的 **GPL-3.0-or-later**，详见 [LICENSE](LICENSE)。
