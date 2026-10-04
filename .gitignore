@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+.codex/
+dist/
+*.blend
+*.blend1
+*.log

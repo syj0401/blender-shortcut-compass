@@ -1,0 +1,14 @@
+schema_version = "1.0.0"
+id = "shortcut_compass"
+version = "0.6.0"
+name = "Shortcut Compass"
+tagline = "Show common shortcuts and next-key hints inside Blender"
+maintainer = "Shortcut Compass contributors"
+type = "add-on"
+tags = ["User Interface"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+[permissions]
+network = "Serve authenticated Blender context on local loopback only"
+clipboard = "Copy the local MCP connection token when requested"

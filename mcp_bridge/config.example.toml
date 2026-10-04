@@ -1,0 +1,16 @@
+# 将这段内容合并到 Codex 的 config.toml，替换真实解压路径和插件当前令牌。
+# Windows TOML 字面量字符串使用单引号，反斜杠无需转义。
+# 安装后，Python 和 server.py 都必须使用绝对路径。
+[mcp_servers.blender_shortcut_companion]
+command = 'C:\path\to\blender-shortcut-compass\mcp_bridge\.venv\Scripts\python.exe'
+args = ['C:\path\to\blender-shortcut-compass\mcp_bridge\server.py']
+startup_timeout_sec = 20
+tool_timeout_sec = 10
+enabled_tools = ["get_blender_context", "suggest_shortcuts", "get_blender_connection_status"]
+
+[mcp_servers.blender_shortcut_companion.env]
+BLENDER_SHORTCUT_TOKEN = "替换为 Blender 插件当前连接令牌"
+BLENDER_SHORTCUT_PORT = "18764"
+
+# 如希望从 Codex 启动环境读取令牌，可删除上面的 TOKEN 项，在服务器表内增加：
+# env_vars = ["BLENDER_SHORTCUT_TOKEN"]
